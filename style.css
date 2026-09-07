@@ -1,0 +1,63 @@
+:root{
+  --bg:#080b10;
+  --card:#0f151d;
+  --card2:#121a23;
+  --text:#f3f7f8;
+  --muted:#9eabb4;
+  --accent:#31e6bc;
+  --accent2:#67ddff;
+  --border:#22303a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.65;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(49,230,188,.11), transparent 30%),
+    radial-gradient(circle at 100% 15%, rgba(103,221,255,.08), transparent 30%),
+    var(--bg);
+}
+.wrap{max-width:920px;margin:0 auto;padding:48px 20px 80px}
+.brand{
+  display:flex;align-items:center;gap:12px;
+  color:var(--text);text-decoration:none;margin-bottom:34px
+}
+.logo{
+  width:44px;height:44px;border-radius:14px;
+  display:grid;place-items:center;font-weight:900;letter-spacing:-1px;
+  color:#03110d;background:linear-gradient(135deg,var(--accent),var(--accent2));
+  box-shadow:0 10px 35px rgba(49,230,188,.14)
+}
+.brandname{font-weight:850;font-size:20px;letter-spacing:-.4px}
+.card{
+  background:linear-gradient(180deg,rgba(18,26,35,.95),rgba(15,21,29,.95));
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:clamp(24px,5vw,42px);
+  box-shadow:0 24px 70px rgba(0,0,0,.28)
+}
+.badge{
+  display:inline-block;padding:6px 11px;border-radius:999px;
+  color:#9af5df;background:rgba(49,230,188,.08);
+  border:1px solid rgba(49,230,188,.28);
+  font-size:13px;font-weight:750;margin-bottom:16px
+}
+h1{font-size:clamp(36px,7vw,58px);line-height:1.03;margin:0 0 10px;letter-spacing:-2.2px}
+h2{font-size:22px;margin:34px 0 8px;letter-spacing:-.4px}
+p,li{color:#d9e2e6}
+.muted{color:var(--muted)}
+a{color:#88f0d9}
+ul{padding-left:22px}
+.nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{
+  text-decoration:none;color:var(--text);font-weight:750;
+  background:#111a22;border:1px solid var(--border);
+  padding:10px 14px;border-radius:12px
+}
+.btn:hover{border-color:#3c5868}
+.footer{margin-top:26px;color:var(--muted);font-size:14px;text-align:center}
+code{background:#0a1117;padding:2px 6px;border-radius:6px}
